@@ -1,40 +1,20 @@
+version: 2
+
+
 sources:
   - name: sap
     description: banco sap da Advennture Works
     schema: sap_adw
     tables:
       - name: address
-      - description: a
-      
       - name: countryregion
-      - description: a
-
       - name: creditcard
-       description: a
-            
       - name: customer
-        description: a
-
       - name: person
-        description: a
-
       - name: product
-       description: a
-
       - name: salesorderdetail
-        description: a
-
       - name: salesorderheader
-        description: a
-
       - name: salesorderheadersalesreason
-        description: a
-
       - name: salesreason
-        description: a
-
       - name: stateprovince
-        description: a
-
       - name: store
-        description: a
