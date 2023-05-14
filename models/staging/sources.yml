@@ -1,0 +1,61 @@
+version: 2
+
+
+sources:
+  - name: sap
+    description: réplica do banco sap da Advennture Works
+    schema: sap_adw
+    tables:
+
+      - name: address
+        description: endereços dos clientes
+
+
+      - name: countryregion
+        description: região
+
+
+      - name: creditcard
+        description: informações de cartão de crédito
+
+
+      - name: customer
+        description: informações de clientes
+
+
+      - name: person
+        description: informações de contato de clientes
+
+
+      - name: product
+        description: informações de produtos
+
+
+      - name: salesorderdetail
+        description: detalhes de pedidos
+
+
+      - name: salesorderheader
+        description: informações como data, tipo de frete, status, total do pedido, número do pedido e mais
+        columns:
+          - name: salesorderid
+            description: chave primária da tabela salesorderheader
+            tests:
+              - unique
+              - not_null
+              
+
+      - name: salesorderheadersalesreason
+        description: tabela para referenciar data de modificação
+
+
+      - name: salesreason
+        description: tabela para referenciar nome, motivo de mudança e data de modificação
+
+      
+      - name: stateprovince
+        description: estado, província, país e etc
+
+
+      - name: store
+        description: clientes
