@@ -12,7 +12,7 @@ with stg_salesorderheader as (
 
 , transformed as (
     select 
-        row_number() over (order by stg_salesorderheader.creditcardid) as creditcard_sk -- auto-incremental surrogate key	
+        row_number() over (order by stg_salesorderheader.creditcardid) as creditcard_sk
         , stg_salesorderheader.creditcardid
         , stg_creditcard.cardtype
     from stg_salesorderheader 
